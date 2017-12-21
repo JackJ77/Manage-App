@@ -3,20 +3,21 @@ import { Link, IndexLink } from 'react-router';
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-inverse">
-      <div className="container-fluid">
-        <div className="navbar-header">
-          <IndexLink className="navbar-brand" to="/" activeClassName="active">Home</IndexLink>
-        </div>
-        <ul className="nav navbar-nav">
-          <li>
-            <IndexLink to="/" activeClassName="active">Calendar</IndexLink>
+    <nav className="navbar navbar-inverse navbar-toggleable-md bg-inverse">
+      <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navCollapse">
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      <IndexLink className="navbar-brand" to="/" activeClassName="active">Home</IndexLink>
+      <div className="collapse navbar-collapse" id="navCollapse">
+        <ul className="navbar-nav mr-auto">
+          <li className="nav-item">
+            <IndexLink className="nav-link" to="/" activeClassName="active">Calendar</IndexLink>
           </li>
-          <li>
-            <Link to="budget" activeClassName="active">Budget</Link>
+          <li className="nav-item">
+            <Link className="nav-link" to="budget" activeClassName="active">Budget</Link>
           </li>
-          <li>
-            <Link to="todo" activeClassName="active">To do</Link>
+          <li className="nav-item">
+            <Link className="nav-link" to="todo" activeClassName="active">To do</Link>
           </li>
         </ul>
       </div>
