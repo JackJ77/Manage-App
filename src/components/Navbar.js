@@ -3,7 +3,7 @@ import { Link, IndexLink } from 'react-router';
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-inverse navbar-toggleable-md bg-inverse">
+    <nav className="navbar navbar-inverse navbar-toggleable-md bg-inverse mt-5">
       <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navCollapse">
         <span className="navbar-toggler-icon"></span>
       </button>

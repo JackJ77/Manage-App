@@ -5,3 +5,17 @@
   max-width: 850px;
   margin: 0 auto;
 }
+
+.task {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #00b300;
+}
+
+.task:hover {
+  background-color: #00cc00;
+}
+
+.delete-task {
+  cursor: pointer;
+}

@@ -19,7 +19,10 @@ class InputTask extends Component {
   onTaskSubmit(event) {
         event.preventDefault();
 
-        this.props.addTask(this.state.term);
+        if(this.state.term.length > 0) {
+          this.props.addTask(this.state.term);
+        }
+        
         this.setState({ term: '' });
     }
 

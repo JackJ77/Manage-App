@@ -1,14 +1,18 @@
 import React from 'react';
-import TaskTodo from './TaskTodo';
 
 const TaskTable = (props) => {
   return(
     <div className="row">
-        <TaskTodo tasks={props.tasks} />
-      <div className="col-6">
-        <div className="d-flex flex-column ">
-          <div className="p-2">flex</div>
-        </div>
+      <div className="col lead">
+        {props.tasks.map((task, id) =>
+          <div key={id} className="p-2 task">
+            {task}
+            <span
+              className="float-right delete-task">
+                &times;
+            </span>
+          </div>
+        )}
       </div>
     </div>
   );
