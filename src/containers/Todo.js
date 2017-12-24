@@ -7,11 +7,14 @@ import TaskTable from '../components/Todo/taskTable';
 
 class Todo extends Component {
 
+
   render() {
     return(
       <div>
         <InputTask addTask={this.props.actions.createTask} />
-        <TaskTable tasks={this.props.tasks} />
+        <TaskTable
+          onClosing={this.props.actions.deleteTask}
+          tasks={this.props.tasks} />
       </div>
     );
   }
