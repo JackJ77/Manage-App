@@ -22,7 +22,7 @@ class InputTask extends Component {
         if(this.state.term.length > 0) {
           this.props.addTask(this.state.term);
         }
-        
+
         this.setState({ term: '' });
     }
 
@@ -46,6 +46,10 @@ class InputTask extends Component {
     );
   }
 }
+
+InputTask.propTypes = {
+  props.addTask: PropTypes.func.isRequired
+};
 
 
 export default InputTask;

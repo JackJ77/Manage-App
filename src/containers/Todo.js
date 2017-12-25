@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as allActions from '../actions/index.js';
@@ -19,6 +19,11 @@ class Todo extends Component {
     );
   }
 }
+
+Todo.propTypes = {
+  tasks: PropTypes.array.isRequired,
+  actions: PropTypes.object.isRequired
+};
 
 
 function mapStateToProps(state) {
