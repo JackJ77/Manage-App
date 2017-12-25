@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import InputBudget from '../../components/Budget/InputBudget';
 
 class Budget extends Component {
   render() {
     return(
-      <div>Budget</div>
+      <div>
+        <InputBudget />
+      </div>
     );
   }
 }

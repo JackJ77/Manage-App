@@ -1,8 +1,8 @@
 import React from 'react';
 import { IndexRoute, Route } from 'react-router';
 import App from './components/App';
-import Budget from './containers/Budget.js';
-import Calendar from './containers/Calendar.js';
+import Budget from './containers/Budget/Budget.js';
+import Calendar from './containers/Calendar/Calendar.js';
 import Todo from './containers/Todo/Todo.js';
 
 

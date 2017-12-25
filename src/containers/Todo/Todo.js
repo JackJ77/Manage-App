@@ -1,9 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import * as allActions from '../actions/index.js';
+import * as allActions from '../../actions/index.js';
 import InputTask from './InputTask';
-import TaskTable from '../components/Todo/taskTable';
+import TaskTable from '../../components/Todo/taskTable';
 
 class Todo extends Component {
 
