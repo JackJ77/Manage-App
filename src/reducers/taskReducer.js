@@ -5,9 +5,10 @@ export default function taskReducer(state = [], action) {
     case types.CREATE_TASK:
       return [...state, action.task];
     case types.DELETE_TASK:
-      return state.filter((el, id) => {
-        id !== action.id;
-      });
+    return [
+      ...state.slice(0, action.id),
+      ...state.slice(action.id + 1)
+    ];
     default:
       return state;
   }

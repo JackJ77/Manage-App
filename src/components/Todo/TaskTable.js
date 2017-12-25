@@ -7,9 +7,7 @@ const TaskTable = (props) => {
           <div key={id} className="p-2 task">
             {task}
             <span
-              onClick={() => {
-                console.log(id);
-                props.onClosing(id); }}
+              onClick={() => { props.onClosing(id); }}
               className="float-right delete-task">
                 &times;
             </span>

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 
 class InputTask extends Component {
   constructor(props) {
@@ -48,7 +48,7 @@ class InputTask extends Component {
 }
 
 InputTask.propTypes = {
-  props.addTask: PropTypes.func.isRequired
+  addTask: PropTypes.func.isRequired
 };
 
 
