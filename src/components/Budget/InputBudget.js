@@ -8,9 +8,10 @@ const InputBudget = (props) => {
           <option>+</option>
           <option>-</option>
         </select>
-      <input type="number" className="form-control" />
+      <input placeholder="description" type="text" className="form-control" />
+      <input placeholder="value" type="number" className="form-control" />
       <span className="input-group-btn">
-        <button type="button" className="btn btn-success">Add Amount</button>
+        <button type="button" className="btn btn-success">Add Value</button>
       </span>
     </div>
   );
