@@ -1,13 +1,13 @@
 import { combineReducers } from 'redux';
 import tasks from './taskReducer';
 import income from './incomeReducer';
-import expenses from './expenseReducer';
+import expense from './expenseReducer';
 
 
 const rootReducer = combineReducers({
   tasks,
-  income,
-  expenses
+  expense,
+  income
 });
 
 export default rootReducer;
