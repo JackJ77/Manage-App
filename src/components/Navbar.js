@@ -11,10 +11,7 @@ const Navbar = () => {
       <div className="collapse navbar-collapse" id="navCollapse">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item">
-            <IndexLink className="nav-link" to="/" activeClassName="active">Calendar</IndexLink>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="budget" activeClassName="active">Budget</Link>
+            <Link className="nav-link" to="/" activeClassName="active">Budget</Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="todo" activeClassName="active">To do</Link>
