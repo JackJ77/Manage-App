@@ -11,7 +11,7 @@ class Budget extends Component{
       if(this.props.income.length > 0) {
         this.props.income.map(inc => {
           totalInc += parseInt(inc.val);
-        })
+        });
       }
 
       let totalExp = 0;
@@ -56,7 +56,7 @@ class Budget extends Component{
         </div>
       );
     }
-};
+}
 
 function mapStateToProps(state) {
   return {
